@@ -1,0 +1,83 @@
+Classes:
+
+class Table<T>:
+
+Instance variables:
+	/** String array for storing the names of the columns */
+	private final String[] columns;
+
+	/** Integer for keeping track of number of rows */
+	private Integer rows;
+
+	/** Map for mapping column names to an array of items under that column */
+	private HashMap<String, Column> tableMap;
+
+Constructor:
+	Table(String[] columns) {
+		this.columns = columns;
+        numRows = 0;
+        for (String s : columns) {
+            tableMap.put(s, new Column<T>(s));
+        }
+	}
+
+Methods: 
+	addRow(ArrayList rows) {
+		Iterator<T> rowIter = row.iterator();
+		for (String s : cols) {
+            tableMap.get(s).add(rowIter.next());
+        }
+        numRows = new Integer(numRows + 1);
+	}
+
+	public static Table join(Table a, Table b) {
+
+	}
+
+class Column<T>:
+
+Instance variables:
+	/** Map for mapping column names to an array of items under that column
+	private String header;
+	private ArrayList<T> contents;
+
+Constructor:
+	/** constructor that takes in a String array of column names */
+	public Column(String header) {
+		this.header = header;
+		this.column = new ArrayList<T>();
+	}
+
+Methods:
+	/** Get method */
+	public T get(index) {
+		return contents.get(index);
+	}
+
+	/** add element to column */
+	public void add(T val) {
+		contents.add(val);
+	}
+
+	public String getHeader() {
+		return header;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
