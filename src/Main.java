@@ -11,9 +11,18 @@ public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
         Database db = new Database();
+        System.out.println("\n" +
+                "██╗    ██╗███████╗██╗      ██████╗ ██████╗ ███╗   ███╗███████╗        ███╗ ██╗ \n" +
+                "██║    ██║██╔════╝██║     ██╔════╝██╔═══██╗████╗ ████║██╔════╝    ██╗██╔██╗╚██╗\n" +
+                "██║ █╗ ██║█████╗  ██║     ██║     ██║   ██║██╔████╔██║█████╗      ╚═╝╚═╝╚═╝ ██║\n" +
+                "██║███╗██║██╔══╝  ██║     ██║     ██║   ██║██║╚██╔╝██║██╔══╝      ██╗       ██║\n" +
+                "╚███╔███╔╝███████╗███████╗╚██████╗╚██████╔╝██║ ╚═╝ ██║███████╗    ╚═╝      ██╔╝\n" +
+                " ╚══╝╚══╝ ╚══════╝╚══════╝ ╚═════╝ ╚═════╝ ╚═╝     ╚═╝╚══════╝             ╚═╝ \n" +
+                "                                                                               \n");
         System.out.print(PROMPT);
 
         String line = "c";
+
         while ((line = in.readLine()) != null) {
             if (EXIT.equals(line)) {
                 break;
