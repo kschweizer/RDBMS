@@ -1,3 +1,15 @@
+###SETUP
+If you just want to run a working build of the code:
+
+`java -jar rdbms.jar`
+
+If you want to build the source code on your own machine, you'll need to:
+
+
+
+
+
+
 Database commands:
 
 CREATE:
