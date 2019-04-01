@@ -10,7 +10,7 @@ public class TableReader {
     In rows;
 
     public static boolean exists(String filename) {
-        File f = new File(filename + ".tbl");
+        File f = new File("tables/" + filename + ".tbl");
         return f.exists();
     }
     public TableReader(String filename) {
@@ -35,7 +35,7 @@ public class TableReader {
 
     public static String write(Table t, String name) {
         try{
-            PrintWriter writer = new PrintWriter(name + ".tbl", "UTF-8");
+            PrintWriter writer = new PrintWriter("tables/" + name + ".tbl", "UTF-8");
             writer.println(t.getColumnPrint());
             for (Object r : t) {
                 Row tr = (Row) r;

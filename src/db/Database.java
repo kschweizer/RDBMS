@@ -103,7 +103,7 @@ public class Database {
         if (!TableReader.exists(name)) {
             return "ERROR: table does not exist";
         }
-        TableReader r = new TableReader(name + ".tbl");
+        TableReader r = new TableReader("tables/" + name + ".tbl");
         String columns = r.getColumns();
         try {
             transact("create table " + name + " (" + columns + ")");
