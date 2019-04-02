@@ -68,10 +68,11 @@ example:
 example #1:
 
     select <column expr0>,<column expr1>,... from <table0>,<table1>,... where <cond0> and <cond1> and ...
+Note on conditional statements: 
+Only binary and unary conditions are allowed: `==`, `!=`, `<`, `>`, `<=`, `>=`
 
 example #2:
 
     select <column expr> from <table0>
     
-Note on conditional statements: 
-Only binary and unary conditions are allowed: `==`, `!=`, `<`, `>`, `<=`, `>=`
+
