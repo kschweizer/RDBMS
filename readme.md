@@ -73,6 +73,5 @@ example #2:
 
     select <column expr> from <table0>
     
-Note on conditional statements:
-    
-    Only binary and unary conditions are allowed: `==`, `!=`, `<`, `>`, `<=`, `>=`
+Note on conditional statements: 
+Only binary and unary conditions are allowed: `==`, `!=`, `<`, `>`, `<=`, `>=`
