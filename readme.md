@@ -1,18 +1,18 @@
-###SETUP
+### SETUP
 If you just want to run a working build of the code:
 
 `java -jar rdbms.jar`
 
-If you want to build the source code on your own machine, you'll need to:
+If you want to build the source code on your own machine, you'll need to make sure to list the `.../rdbms/lib/algs4.jar` in your dependencies and also use java 1.8. (1.9 seems to cause issues with this)
 
 
 
 
 
 
-Database commands:
+### Database commands:
 
-CREATE:
+#### CREATE:
 
 example #1:
 
@@ -26,28 +26,28 @@ NOTE: method 2 requires using the select command, described below
 
 
 
-LOAD:
+#### LOAD:
 
 example:
 
     load <table name>
 
 
-STORE:
+#### STORE:
 
 example:
 
     store <table name>
 
 
-DROP TABLE:
+#### DROP TABLE:
 
 example:
 
     drop table <table name>
 
 
-INSERT INTO:
+#### INSERT INTO:
 
 example:
 
@@ -56,19 +56,23 @@ example:
 NOTE: insert values must match the given table
 
 
-PRINT:
+#### PRINT:
 
 example:
 
     print <table name>
 
 
-SELECT:
+#### SELECT:
 
 example #1:
 
     select <column expr0>,<column expr1>,... from <table0>,<table1>,... where <cond0> and <cond1> and ...
+Note on conditional statements: 
+Only binary and unary conditions are allowed: `==`, `!=`, `<`, `>`, `<=`, `>=`
 
 example #2:
 
     select <column expr> from <table0>
+    
+
