@@ -8,7 +8,7 @@ public class StringItem implements TableItem {
         String first = Character.toString(n.charAt(0));
         String last = Character.toString(n.charAt(n.length() - 1));
         if (!(first.equals("'") && last.equals("'"))) {
-            throw new IllegalArgumentException("ERROR: Malformed data entry: strings must be passed with single quotes: '");
+            throw new IllegalArgumentException("ERROR: Malformed data entry: strings must be passed with single quotes");
         } else {
             contents = n;
         }
